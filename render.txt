@@ -1,0 +1,7 @@
+username
+password
+server
+port
+first_name
+last_name
+email
