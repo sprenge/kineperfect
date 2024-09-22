@@ -39,9 +39,12 @@ site1   ALL=(ALL:ALL) ALL
 Still as root, add site1 to the www-data group and add static directory + set permissions
 
 ```bash
-gpasswd -a www-data quinn
-chmod g+x /home/site  && chmod g+x /home/site/static
-chmod g+x /home/site/static/coach/  && chmod g+x /home/site/static/video/
+gpasswd -a www-data site1
+mkdir -p /home/site1/static/coach
+mkdir -p /home/site1/static/video
+mkdir -p /home/site1/static/app
+chmod g+x /home/site1  && chmod 777 /home/site1/static
+chmod 777 /home/site1/static/coach/  && chmod 777 /home/site1/static/video/ && chmod 777 /home/site1/static/app/
 ```
 
 Add SSL cert, clone repo and install pip dependencies
@@ -66,25 +69,65 @@ Provision static files
 ```bash
 # to be executed as site1 user
 cd
-# cp -r kineperfectclient/coach/dist/* ~/static/coach
-# cp -r tbc ~/static/app
+cp -r kineperfectclient/coach/dist/* ~/static/coach
+cp -r tbc ~/static/app
 cd kineperfectserver/kineperfect
 python3 manage.py collectstatic
+python3 manage.py migrate
 ```
 
 Provision database from a backup
 
-Provision a new database
+```bash
+python3 manage.py loaddata backup.json
+```
 
 
+Define in nginx config 
+
+as a root user edit /etc/nginx/sites-enabled/default and create following section
+```bash
+server {
+        ssl on;
+        listen 8130 ssl default_server;
+        listen [::]:8130 ssl default_server;
+        ssl_certificate /etc/letsencrypt/live/kineperfect.duckdns.org/fullchain.pem;
+        ssl_certificate_key /etc/letsencrypt/live/kineperfect.duckdns.org/privkey.pem;
+        server_name kineperfect.duckdns.org;
+
+        location /static/ {
+            root /home/site1;
+        }
+        location / {
+            proxy_pass http://unix:/run/gunicorn_site1.sock;
+            proxy_pass_header Server;
+            proxy_set_header Host $http_host;
+            proxy_redirect off;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-Protocol $scheme;
+            proxy_set_header    Upgrade     $http_upgrade;
+            proxy_set_header    Connection  "upgrade";
+            client_max_body_size 500M;
+        }
+}
+
+```
+
+```bash
+systemctl restart nginx
+```
 Gunicorn service, please replace site1 with your site name
 
 ```bash
 sudo -i # make sure to be root
+mkdir /run/gunicorn_site1
+chown site1:www-data /run/gunicorn_site1
+chmod 770 /run/gunicorn_site1
+
+
 cat <<EOF > /etc/systemd/system/gunicorn_site1.service
 [Unit]
 Description=gunicorn daemon
-Requires=gunicorn.socket
 After=network.target
 
 [Service]
@@ -95,10 +138,10 @@ ExecStart=/usr/local/bin/gunicorn \
           --access-logfile - \
           --workers 3 \
           --time 600 \
-          --bind unix:/run/gunicorn.sock \
+          --bind unix:/run/gunicorn_site1/gunicorn_site1.sock \
           kineperfect.wsgi:application
 
 [Install]
 WantedBy=multi-user.target
 EOF
-sudo systemctl start gunicorn.service
+systemctl start gunicorn.service
