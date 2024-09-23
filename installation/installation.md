@@ -80,6 +80,7 @@ Provision database from a backup
 
 ```bash
 python3 manage.py loaddata backup.json
+# copy video data into the
 ```
 
 
@@ -131,6 +132,7 @@ Description=gunicorn daemon
 After=network.target
 
 [Service]
+Environment="EXTRA_CSRF_HOSTS=https://kineperfect.duckdns.org:8130"
 User=site1
 Group=www-data
 WorkingDirectory=/home/site1/kineperfectserver/kineperfect
@@ -145,3 +147,13 @@ ExecStart=/usr/local/bin/gunicorn \
 WantedBy=multi-user.target
 EOF
 systemctl start gunicorn.service
+
+Migrate data is data is cloned from another site
+
+Change the fqdn/port in the company table
+
+# to be executed as site1 user
+cd
+cd kineperfectserver/kineperfect
+# old is 8129, new is 8130 in the example
+python3 manage.py change_video_url kineperfect.duckdns.org:8129 kineperfect.duckdns.org:8130
