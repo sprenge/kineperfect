@@ -19,7 +19,7 @@ Install the following software :
 1. Open the gimp application
 2. In the menu go to file / open and select the PNG file from the previous step
 
-![Alt text](image.png)
+![Alt text](https://raw.githubusercontent.com/sprenge/kineperfect/refs/heads/main/userguide/image.png)
 
 3. If the image is not in the upright position : Go to the menu Image / transform / 90 degress counter clock wise
 4. Select the Crop tool (or shift+C)
