@@ -70,7 +70,7 @@ Provision static files
 # to be executed as site1 user
 cd
 cp -r kineperfectclient/coach/dist/* ~/static/coach
-cp -r tbc ~/static/app
+cp -r kineperfectclient/webclient/* ~/static/app
 cd kineperfectserver/kineperfect
 python3 manage.py collectstatic
 python3 manage.py migrate
