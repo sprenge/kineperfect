@@ -39,7 +39,8 @@ Als u vragen hebt of problemen ondervindt, neem dan gerust contact op met uw e-m
 
 ## Email templates
 
-Hiermee kan je de tekst instellen die je naar de patienten wil sturen in functie van de actie.  Hierbij kan je gebruik maken van zogenaamde variabelen (omringd door dubbele accoladen) die vertalen in contextuele informatie.  Hieronder kan je een voorbeeld vinden voor de actie als een nieuwe gebruiker wordt aangemaakt
+Hiermee kan je de tekst instellen die je naar de patienten wil sturen in functie van de actie.  Hierbij kan je gebruik maken van zogenaamde variabelen (omringd door dubbele accoladen) die vertalen in contextuele informatie.  Hieronder kan je een voorbeeld vinden voor de actie als een nieuwe gebruiker wordt aangemaakt :
+
 
 ```text
 dag {{first_name}},
@@ -53,7 +54,9 @@ port : {{port}}
 Met vriendelijke groeten
 ```
 
+
 Dit vertaalt zich bijvoorbeeld in een email met als inhoud :
+
 
 ```text
 dag Jan,
