@@ -25,3 +25,4 @@ Niet alle parameters kunnen gecombineerd worden.  Volgende tabel geeft aan wat g
 | /            | 6              | 6                 | 6           | Voer 6 seconden uit met een gewicht van 6kg, rust daarna 6 seconden                     |
 | 6            | 6              | /                 | 6           | Herhaal 6 keer gedurende 6 seconden met een gewicht van 6kg                             |
 | 6            | /              | 6                 | 6           | Herhaal 6 keer met een gewicht van 6kg, rust daarna 6 seconden                          |
+
