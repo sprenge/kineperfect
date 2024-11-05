@@ -70,7 +70,7 @@ Provision static files
 # to be executed as site1 user
 cd
 cp -r kineperfectclient/coach/dist/* ~/static/coach
-cp -r kineperfectclient/webclient/* ~/static/app
+cp -r kineperfectclient/kine2/webclient/* ~/static/app
 cd kineperfectserver/kineperfect
 python3 manage.py collectstatic
 python3 manage.py migrate
@@ -100,7 +100,7 @@ server {
             root /home/site1;
         }
         location / {
-            proxy_pass http://unix:/run/gunicorn_site1.sock;
+            proxy_pass http://unix:/run/gunicorn_site1/gunicorn_site1.sock;
             proxy_pass_header Server;
             proxy_set_header Host $http_host;
             proxy_redirect off;
@@ -157,3 +157,32 @@ cd
 cd kineperfectserver/kineperfect
 # old is 8129, new is 8130 in the example
 python3 manage.py change_video_url kineperfect.duckdns.org:8129 kineperfect.duckdns.org:8130
+```
+
+## 4. Certificates
+
+Script to update the duckdns records, to be done onces :
+
+```bash
+#!/bin/bash
+DOMAIN="_acme-challenge.kineperfect.duckdns.org"
+TOKEN="see duckdns account"
+DUCKDNS_DOMAIN="kineperfect"
+
+case $1 in
+  "deploy_challenge")
+    curl "https://www.duckdns.org/update?domains=$DUCKDNS_DOMAIN&token=$TOKEN&txt=$4&verbose=true"
+    sleep 30  # Wait for DNS propagation
+    ;;
+  "clean_challenge")
+    curl "https://www.duckdns.org/update?domains=$DUCKDNS_DOMAIN&token=$TOKEN&txt=&verbose=true"
+    ;;
+esac
+
+```
+
+Update daily the certificate in crontab :
+
+```bash
+0 0 * * * certbot certonly -v   --non-interactive   --agree-tos   --email sprenge54@gmail.com   --preferred-challenges dns   --authenticator dns-duckdns   --dns-duckdns-token see-token-in-duckdns   --dns-duckdns-propagation-seconds 120   -d "kineperfect.duckdns.org" >> /var/log/certbot-renew.log 2>&1
+```
