@@ -1,6 +1,6 @@
 # 📽️ Video's Tabblad - Documentatie
 
-Het **Video's**-tabblad biedt gebruikers de mogelijkheid om videobestanden te beheren. Hier kun je eenvoudig video's uploaden in verschillende formaten, zoals MP4. Lees verder voor een gedetailleerde uitleg van de beschikbare functies.
+Het **Video's**-tabblad biedt gebruikers de mogelijkheid om videobestanden te beheren. Hier kun je video's uploaden, bekijken, bewerken, verwijderen en zelfs een **Snapchat**-recreatie maken. Lees verder voor een volledige uitleg van de beschikbare functies.
 
 ---
 
@@ -29,21 +29,24 @@ Deze optie ondersteunt andere videobestandsformaten (zoals AVI, MOV, of MKV), af
 
 ---
 
-## ℹ️ Belangrijke Opmerkingen
-- Zorg ervoor dat de videobestanden niet groter zijn dan de maximale bestandsgrootte van **500 MB** (of een andere limiet afhankelijk van je instellingen).
-- Ondersteunde formaten: 
-  - MP4
-  - AVI
-  - MOV
-  - MKV (optioneel, afhankelijk van je app)
-- Zorg ervoor dat je een stabiele internetverbinding hebt tijdens het uploaden.
+### 3. **Huidige video's beheren**
+In dit gedeelte kun je een overzicht zien van alle eerder geüploade video's. Je hebt meerdere opties om deze video's te beheren:
 
----
+#### 📋 **Bekijk Video's**
+- Klik op een video om deze direct af te spelen.
+- Controleer details zoals bestandsformaat, grootte en uploadtijd.
 
-## 🛠️ Veelvoorkomende Problemen & Oplossingen
+#### ✏️ **Bewerk Video's**
+- Klik op de knop **"Bewerken"** om wijzigingen aan te brengen:
+  - Pas de titel of beschrijving aan.
+  - Trim de video of voeg eenvoudige effecten toe (afhankelijk van de app-functionaliteiten).
 
-| Probleem                          | Mogelijke Oplossing                                        |
-|-----------------------------------|-----------------------------------------------------------|
-| **Upload mislukt**                 | Controleer of het bestand een ondersteund formaat heeft.  |
-| **Te groot bestand**               | Verklein je bestand met een compressietool.               |
-| **Geen internetverbinding**        | Controleer je netwerkverbinding. 
+#### 🗑️ **Verwijder Video's**
+- Selecteer een video en klik op de knop **"Verwijderen"** om deze permanent te verwijderen uit je bibliotheek.
+- **Let op:** Verwijderde video's kunnen niet worden hersteld.
+
+#### 🔄 **Snapchot recreatie**
+- Kies een video en klik op de optie **"Snapchot recreatie"**. Dit creëert een Snapchot van de video 
+  - Je kunt een tijdssegment selecteren.
+ 
+
