@@ -18,7 +18,7 @@ Dit scherm heeft tot doel om gebruikers te beheren.
 Klik op **'Save'** om de patiënt toe te voegen aan de database.
 
 ## Patiënten beheren
-Er zijn 3 mogelijke acties:
-- **Edit**: Gegevens aanpassen van de patient
-- **Delete**: Patiënt verwijderen
-- **Change password**: Wachtwoorden veranderen van de patiënt
+Er zijn 3 mogelijke acties: 
+- **Edit**: Gegevens aanpassen van de patient 
+- **Delete**: Patiënt verwijderen 
+- **Change password**: Wachtwoorden veranderen van de patiënt 
