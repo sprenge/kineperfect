@@ -48,5 +48,14 @@ In dit gedeelte kun je een overzicht zien van alle eerder geüploade video's. Je
 #### 🔄 **Snapchot recreatie**
 - Kies een video en klik op de optie **"Snapchot recreatie"**. Dit creëert een Snapchot van de video 
   - Je kunt een tijdssegment selecteren.
+### 4. **Navigeren tussen pagina's**
+Als je de gewenste video niet direct kunt vinden, kun je gemakkelijk door de videobibliotheek bladeren.
+
+**Hoe werkt het?**
+1. Scroll naar beneden in de lijst met video's.
+2. Gebruik de pijltjes rechtsonder om naar de **volgende pagina** te gaan.
+   - ⬅️ **Linkerpijl**: Ga naar de vorige pagina.
+   - ➡️ **Rechterpijl**: Ga naar de volgende pagina.
+3. Blijf bladeren totdat je de gewenste video hebt gevonden.
  
 
