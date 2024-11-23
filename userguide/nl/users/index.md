@@ -2,11 +2,11 @@
 
 Dit scherm heeft tot doel om gebruikers te beheren.
 
-## Patiënt toevoegen
+### Patiënt toevoegen
 
 - Klik op **'Add patient'**
 
-## Gegevens nieuwe Patiënt
+#### Gegevens nieuwe Patiënt
 
 - **User-ID**: Willekeurig cijfer te kiezen
 - **First Name**: Voornaam van de nieuwe patiënt
