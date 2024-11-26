@@ -1,44 +1,23 @@
-# Exercises Tab
+# Tab: Exercises
 
-## 1. **Select Patient**
-Kies de juiste patiënt, als je van plan bent nieuwe oefeningen toe te voegen aan deze patiënt, anders is dit NIET nodig.
+In de tab "Exercises" heb je twee grote mogelijkheden:
 
-- **Selecteer patiënt**:  
-  Gebruik de dropdown om de patiënt te kiezen waarvoor je oefeningen wilt beheren.
+## 1. Oefeningen zien die nog niet aan de geselecteerde   patiënt zijn toegevoegd
+- **Stap 1:** Kies eerst een patiënt bovenaan in de dropdown-lijst.  
+- **Stap 2:** Na het selecteren van een patiënt verschijnen alle oefeningen die **nog NIET** aan deze patiënt zijn toegevoegd.  
 
----
-
-## 2. **Nieuwe Oefening Aanmaken** 
-klik op **'Add excercise'**
-Als je een nieuwe oefening wilt toevoegen aan de DATABASE vul je onderstaande velden in:
-
-- **Titel van de oefening**  
-  Vul de naam of titel van de oefening in.
-  
-- **Beschrijving van de oefening**  
-  Geef een gedetailleerde beschrijving van de oefening, inclusief instructies en eventuele opmerking(en).
-  
-- **Frequentie**  
-  Geef aan hoe vaak de oefening herhaald moet worden (bijvoorbeeld dagelijks, wekelijks, etc.).
-  
-- **Duur (in dagen)**  
-  Geef aan hoelang de patiënt de oefening mag zien. Voer `0` in voor oneindige toegang.
-
-**Opslaan**:  
-Klik op de knop om de nieuwe oefening aan de patiënt toe te voegen.
+### Mogelijke acties:
+- **Bewerken:** Pas de frequentie, beschrijving, of andere eigenschappen van de oefening aan.  
+- **Verwijderen:** Verwijder een oefening permanent uit de database.  
+- **Toewijzen:** Voeg de geselecteerde oefeningen toe aan de patiënt door op **"Assign to Selected User"** te klikken.  
 
 ---
 
-## 3. **Huidige Oefeningen Beheren**
-De lijst met huidige oefeningen
+## 2. Alle oefeningen in de database bekijken
+- Selecteer **geen patiënt** bovenaan in de dropdown.  
 
-- **Bewerk**:  
-  Klik op de oefening om de titel, beschrijving, frequentie of duur te bewerken.
-  
-- **Verwijder**:  
-  Klik op de verwijderknop om de oefening van de patiënt te verwijderen.
-
----
-
-## 4. **Navigeren tussen Oefeningen**
-als je jouw oefeningen niet ziet staan kan je de pijltjes rechtsvanonder gebruiken om te navigeren tussen de verschillende lijsten
+### Mogelijke acties:
+- **Bekijken:** Zie alle oefeningen die in de database staan.  
+- **Bewerken:** Pas details van de oefeningen aan.  
+- **Verwijderen:** Verwijder een oefening uit de database.  
+- **Toevoegen:** Maak een volledig nieuwe oefening en voeg deze toe aan de database.  
