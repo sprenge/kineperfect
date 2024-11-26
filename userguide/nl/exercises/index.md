@@ -1,7 +1,7 @@
 # Exercises Tab
 
 ## 1. **Select Patient**
-Kies de juiste patiënt om oefeningen te beheren of nieuwe oefeningen toe te voegen.
+Kies de juiste patiënt, als je van plan bent nieuwe oefeningen toe te voegen aan deze patiënt, anders is dit NIET nodig.
 
 - **Selecteer patiënt**:  
   Gebruik de dropdown om de patiënt te kiezen waarvoor je oefeningen wilt beheren.
@@ -10,7 +10,7 @@ Kies de juiste patiënt om oefeningen te beheren of nieuwe oefeningen toe te voe
 
 ## 2. **Nieuwe Oefening Aanmaken** 
 klik op **'Add excercise'**
-Als je een nieuwe oefening wilt toevoegen aan de geselecteerde patiënt, vul je onderstaande velden in:
+Als je een nieuwe oefening wilt toevoegen aan de DATABASE vul je onderstaande velden in:
 
 - **Titel van de oefening**  
   Vul de naam of titel van de oefening in.
@@ -30,7 +30,7 @@ Klik op de knop om de nieuwe oefening aan de patiënt toe te voegen.
 ---
 
 ## 3. **Huidige Oefeningen Beheren**
-De lijst met huidige oefeningen voor de geselecteerde patiënt:
+De lijst met huidige oefeningen
 
 - **Bewerk**:  
   Klik op de oefening om de titel, beschrijving, frequentie of duur te bewerken.
