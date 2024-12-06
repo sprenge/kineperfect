@@ -7,7 +7,7 @@ Op deze pagina kan je je schema's beheren.
 - Je kan een schema **verwijderen** als het niet meer nodig is.  
 
 ## Nieuw schema aanmaken
-Volg deze twee stappen om een nieuw schema te maken:
+Volg deze stappen om een nieuw schema te maken:
 
 1. **Klik op 'New Collection':**  
    - Geef het schema een naam.  
