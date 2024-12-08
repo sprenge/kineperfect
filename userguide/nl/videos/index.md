@@ -16,10 +16,10 @@ Met deze optie kun je een videobestand in het **MP4-formaat** video uploaden. Di
 
 ---
 
-### 3. **Huidige video's beheren, GEBRUIK DEZE FUNCTIE OM OEFENINGEN TOE TE VOEGEN!"**
+### 3. **Huidige video's beheren"**
 In dit gedeelte kun je een overzicht zien van alle eerder geüploade video's. Je hebt meerdere opties om deze video's te beheren:
 
-#### 📋 **Bekijk Video's**
+#### 📋 **Bekijk Video's, GEBRUIK DEZE FUNCTIE OM EEN VIDEO AAN EEN OEFENINGEN TOE TE VOEGEN!**
 - Klik op een video om deze direct af te spelen.
 
 #### ✏️ **Bewerk Video's**
