@@ -16,7 +16,7 @@ Met deze optie kun je een videobestand in het **MP4-formaat** video uploaden. Di
 
 ---
 
-### 3. **Huidige video's beheren"**
+### 2. **Huidige video's beheren"**
 In dit gedeelte kun je een overzicht zien van alle eerder geüploade video's. Je hebt meerdere opties om deze video's te beheren:
 
 #### 📋 **Bekijk Video's, GEBRUIK DEZE FUNCTIE OM EEN VIDEO AAN EEN OEFENING TOE TE VOEGEN!**
@@ -37,7 +37,7 @@ In dit gedeelte kun je een overzicht zien van alle eerder geüploade video's. Je
 -"**DEZE STAP KOMT NA HET BEWERKEN"**
 
 - Kies een video en klik op de optie **"Snapchot recreatie"**. Op deze manier pas je het bewerkte interval toe => zie 'bewerk video's'
-### 4. **SEARCH video's**
+### 3. **SEARCH video's**
 -Je kan ook zoeken tussen de video's door de naam van een video in te typen.
 
 
