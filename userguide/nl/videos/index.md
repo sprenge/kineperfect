@@ -1,14 +1,13 @@
 # 📽️ Video's Tabblad - Documentatie
 
-Het **Video's**-tabblad biedt gebruikers de mogelijkheid om videobestanden te beheren. Hier kun je video's uploaden, bekijken, bewerken, verwijderen en zelfs een **Snapchat**-recreatie maken. Lees verder voor een volledige uitleg van de beschikbare functies.
+Het **Video's**-tabblad biedt gebruikers de mogelijkheid om videobestanden te beheren. Hier kun je video's uploaden, bekijken, bewerken, verwijderen en zelfs een **Snapchot**-recreatie maken. Lees verder voor een volledige uitleg van de beschikbare functies.
 
 ---
 
 ## 🌟 Functies
 
 ### 1. **MP4-bestand uploaden**
-Met deze optie kun je een videobestand in het **MP4-formaat** uploaden. Dit is handig voor het toevoegen van video's die compatibel zijn met de meeste mediaspelers.
-
+Met deze optie kun je een videobestand in het **MP4-formaat** video uploaden. Dit is bedoelt om video's te uploaden om daarna toe te voegen aan een oefening.
 **Hoe werkt het?**
 1. Klik op de knop **"MP4 Uploaden"**.
 2. Selecteer het gewenste MP4-bestand op je apparaat.
@@ -17,45 +16,28 @@ Met deze optie kun je een videobestand in het **MP4-formaat** uploaden. Dit is h
 
 ---
 
-### 2. **Video-bestand uploaden**
-Deze optie ondersteunt andere videobestandsformaten (zoals AVI, MOV, of MKV), afhankelijk van wat de app ondersteunt.
-
-**Hoe werkt het?**
-1. Klik op de knop **"Video Uploaden"**.
-2. Kies het bestand op je apparaat.
-3. Het bestand wordt geüpload en verwerkt.
-
-**Let op:** Als een formaat niet wordt ondersteund, krijg je een foutmelding.
-
----
-
-### 3. **Huidige video's beheren**
+### 3. **Huidige video's beheren, GEBRUIK DEZE FUNCTIE OM OEFENINGEN TOE TE VOEGEN!"**
 In dit gedeelte kun je een overzicht zien van alle eerder geüploade video's. Je hebt meerdere opties om deze video's te beheren:
 
 #### 📋 **Bekijk Video's**
 - Klik op een video om deze direct af te spelen.
-- Controleer details zoals bestandsformaat, grootte en uploadtijd.
 
 #### ✏️ **Bewerk Video's**
 - Klik op de knop **"Bewerken"** om wijzigingen aan te brengen:
-  - Pas de titel of beschrijving aan.
-  - Trim de video of voeg eenvoudige effecten toe (afhankelijk van de app-functionaliteiten).
+  - Pas de titel of beschrijving aan
+  - Pas het interval van de snapchot aan. (-15= laatste 15 seconden van de video, mits stop op 0 staat) => **"KLIK OP RECREATE SNAPCHOT OM DIT TOE TE PASSEN"**, zie verder.
+  - Of upload zelf een foto als je geen dynamische beelden prefereert
+  - **"Selecteer vervolgens een oefeningen waaraan je de video wil toevoegen!"**.
 
 #### 🗑️ **Verwijder Video's**
 - Selecteer een video en klik op de knop **"Verwijderen"** om deze permanent te verwijderen uit je bibliotheek.
 - **Let op:** Verwijderde video's kunnen niet worden hersteld.
 
 #### 🔄 **Snapchot recreatie**
-- Kies een video en klik op de optie **"Snapchot recreatie"**. Dit creëert een Snapchot van de video 
-  - Je kunt een tijdssegment selecteren.
-### 4. **Navigeren tussen pagina's**
-Als je de gewenste video niet direct kunt vinden, kun je gemakkelijk door de videobibliotheek bladeren.
+-"**DEZE STAP KOMT NA HET BEWERKEN"**
 
-**Hoe werkt het?**
-1. Scroll naar beneden in de lijst met video's.
-2. Gebruik de pijltjes rechtsonder om naar de **volgende pagina** te gaan.
-   - ⬅️ **Linkerpijl**: Ga naar de vorige pagina.
-   - ➡️ **Rechterpijl**: Ga naar de volgende pagina.
-3. Blijf bladeren totdat je de gewenste video hebt gevonden.
- 
+- Kies een video en klik op de optie **"Snapchot recreatie"**. Op deze manier pas je het bewerkte interval toe => zie 'bewerk video's'
+### 4. **SEARCH video's**
+-Je kan ook zoeken tussen de video's door de naam van een video in te typen.
+
 
